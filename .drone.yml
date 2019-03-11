@@ -5,4 +5,5 @@ pipeline:
       - echo Run Checkmarx scan
       - pwd
       - ls -lR
-      - /app/runCxConsole.sh scan -verbose -CxServer 192.168.56.101 -Projectname drone3 -CxUser admin -CxPassword Checkmarx1234! -LocationType folder -LocationPath $(pwd)
+      - /app/runCxConsole.sh scan -verbose -CxServer 127.0.0.1 -Projectname drone086 -CxUser jb@cx.com -CxPassword Poiuytrewq1@ -LocationType folder -LocationPath $(pwd)
+      
