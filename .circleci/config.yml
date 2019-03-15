@@ -5,4 +5,6 @@ jobs:
       - image: vlecerf/checkmarx-cli-docker
     steps:
       - checkout
-      - run: /opt/CxConsolePlugin/runCxConsole.sh Scan -verbose -CxServer cxprivatecloud.checkmarx.net -Projectname "CxServer\SP\EMEA\checkmarx.com-855\testCircleCI" -CxUser julien.bruinaud@checkmarx.com -CxPassword Panaya1218! -LocationType folder -LocationPath $(pwd)
+      - run: pwd
+      - run: ls -lrt
+      #- run: /opt/CxConsolePlugin/runCxConsole.sh Scan -verbose -CxServer cxprivatecloud.checkmarx.net -Projectname "CxServer\SP\EMEA\checkmarx.com-855\testCircleCI" -CxUser julien.bruinaud@checkmarx.com -CxPassword Panaya1218! -LocationType folder -LocationPath $(pwd)
