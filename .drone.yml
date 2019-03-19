@@ -5,5 +5,5 @@ pipeline:
       - echo Run Checkmarx scan
       - pwd
       - ls -lR
-      - /app/runCxConsole.sh AsyncScan -verbose -CxServer 172.17.121.135 -Projectname "CxServer\drone086" -CxUser jb@cx.com -CxPassword Poiuytrewq1@ -LocationType folder -LocationPath $(pwd)
+      - /app/runCxConsole.sh AsyncScan -verbose -CxServer 172.17.121.135 -Projectname "CxServer\drone086" -CxUser jb@cx.com -CxPassword Poiuytrewq1@ -LocationType folder -LocationPath $(pwd) &
       
