@@ -7,4 +7,4 @@ jobs:
       - checkout
       - run: pwd
       - run: ls -lrt
-      - run: /opt/CxConsolePlugin/runCxConsole.sh Scan -verbose -CxServer cd879533.ngrok.io -Projectname "CxServer\testCircleCI" -CxUser jb@cx.com -CxPassword Poiuytrewq1@ -LocationType folder -LocationPath $(pwd)
+      - run: /opt/CxConsolePlugin/runCxConsole.sh Scan -verbose -CxServer yourcheckmarxserver.com -Projectname "CxServer\yourprojectname" -CxUser yourcxusername -CxPassword yourcxpassword -LocationType folder -LocationPath $(pwd)
