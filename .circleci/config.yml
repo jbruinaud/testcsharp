@@ -8,5 +8,6 @@ jobs:
       - run: pwd
       - run: ls -lrt
       #- run: /opt/CxConsolePlugin/runCxConsole.sh Scan -verbose -CxServer yourcheckmarxserver.com -Projectname "CxServer\yourprojectname" -CxUser yourcxusername -CxPassword yourcxpassword -LocationType folder -LocationPath $(pwd)
-      - run: /opt/CxConsolePlugin/runCxConsole.sh Scan -verbose -CxServer cxprivatecloud.checkmarx.net -Projectname "CxServer\SP\EMEA\checkmarx.com-855\testCircleCI" -CxUser julien.bruinaud@checkmarx.com -CxPassword Panaya1218! -LocationType folder -LocationPath $(pwd)
+      #- run: /opt/CxConsolePlugin/runCxConsole.sh Scan -verbose -CxServer yourcheckmarxserver.com -Projectname "CxServer\yourprojectname" -CxToken yourtoken -LocationType folder -LocationPath $(pwd)
+      - run: /opt/CxConsolePlugin/runCxConsole.sh Scan -verbose -CxServer cxprivatecloud.checkmarx.net -Projectname "CxServer\SP\EMEA\checkmarx.com-855\testCircleCI" -cxToken 129bb3de778a677b6316356dbf14b54a -LocationType folder -LocationPath $(pwd)
 
